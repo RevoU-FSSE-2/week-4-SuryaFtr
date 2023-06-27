@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/nVsM4ivD)
-
-=======
 # Banana Dish Recipe Website - Banana Chef
 
 The content of this website, is to show a recipes for how to make banana dishes, which are accompanied by a video tutorial demo recipe for making banana dishes.
@@ -57,6 +53,4 @@ E-Mail : suryafaturohman@gmail.com
 LinkedIn : https://www.linkedin.com/in/surya-faturohman/
 
 
-
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/6H2sAzcR)
->>>>>>> 3410103 (Moving project)
