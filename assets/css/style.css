@@ -1,0 +1,285 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #DADCE0;
+    margin: 0;
+}
+
+section {
+    margin: 0 16px;
+}
+
+section.full-screen {
+    margin: 0;
+}
+
+#desktop-nav{
+    position: fixed;
+    background-color: #FFE733;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-bottom: 2px solid #11b611;
+}
+
+.title-container {
+    position: relative;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.banana-icon {
+    position: relative;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.banana-icon img{
+    height: 25px;
+    width: 25px;
+}
+
+.banana-sidebar{
+    margin-left: 32px;
+}
+
+#desktop-nav > span > img {
+    height: 32px;
+    width: auto;
+    padding: 8px;
+}
+
+#desktop-nav > span {
+    display: flex;
+    align-items: center;
+}
+
+#desktop-nav > ul {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#desktop-nav > ul > li {
+    margin: 0;
+    display: inline-block;
+}
+
+#desktop-nav > ul > li > a{
+    background-color: #222222;
+    color: #FFE733;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: .5s ease;
+}
+
+.active{
+    background-color: #11b611 !important;
+    color: #222222 !important;
+    border-radius: 10%;
+}
+
+#desktop-nav  ul  li  a:hover{
+    background-color: #11b611;
+    color: #222222;
+    border-radius: 10%;
+}
+
+header {
+    text-align: center;
+    color: #FFE733;
+    background-color: #222222;
+    border-bottom:2px solid #11b611;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 48px;
+}
+
+header h1 {
+    margin: 16px;
+}
+
+header p {
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+#banana-types .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-container{
+    background-color: #FFE733;
+    border:1px solid #11b611;
+    border-radius: 10%;
+    gap: 40px !important;
+}
+
+#banana-dish .flex-container ul {
+    font-size: 1.1em;
+}
+
+#banana-dish .flex-container figure {
+    text-align: center;
+}
+#banana-dish .flex-container figure figcaption{
+    font-size: 1.1em;
+}
+
+#banana-dish .flex-container img {
+    height: 240px;
+}
+
+#video-more{
+    margin-top: 16px;
+}
+
+#video-more .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.more-detail a{
+    background-color: #222222;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #FFE733;    
+    font-size: 1.2em;
+    transition: .5s ease;
+}
+
+.more-detail a:hover{
+    background-color: #DADCE0;
+    color: #000;
+}
+
+fieldset {
+    margin: 16px 0;
+    border-radius: 4px;
+    border-color: #FFE733;
+}
+
+legend{
+    color: #FFE733;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 97%;
+    padding: 4px 4px;
+    margin: 4px 0;
+    display: block;
+    font-size: 16px;
+    transition: .5s ease;
+}
+
+#form-survey {
+    color: #DADCE0;
+    background-color: #222222;
+    border-top:2px solid #11b611;
+    padding: 8px;
+    margin-top: 16px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#form-survey form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    border: 1px solid #FFE733;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+button:hover{
+    color: #DADCE0;
+    background-color: #222222;
+}
+
+footer {
+    text-align: center;
+    color: #222222;
+    background-color: #FFE733;
+    border-top:2px solid #11b611;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFE733;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #11b611;
+    color: #222222;
+    border-radius: 10%;
+}
+
+.sidenav .closebtn {
+    /* position: absolute;
+    top: 0;
+    right: 25px; */
+    font-size: 36px;
+    margin-left: 180px;
+}
+.sidenav .closebtn:hover {
+    background-color: transparent;
+    color: #11b611;
+}
+
+#survey-yes{
+    display: none;
+}
+
+#survey-no{
+    display: none;
+}
