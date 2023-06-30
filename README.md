@@ -18,7 +18,7 @@ The content of this website, is to show a recipes for how to make banana dishes,
 4. Centering element using Flex
 5. Creating a Fixed or Sticky Nav Header
 
-## Addtional skills are used in making the New Version of this website
+## Additional skills are used in making the New Version of this website
 1. Applying custom font using @font-face
 2. Applying text-shadow to text
 3. Applying 1 responsive background image (using contain or cover)
