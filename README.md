@@ -41,7 +41,7 @@ At the top right of the website there is an image of a hamburger icon, which wil
 
 In the content section for filling out a form, at the bottom of the website, there is an inquiry form providing 2 radio button form options. Which answer choice from the form radio button will affect the content of the next form filling.
 
-## (New Version 2)Some content and functions interaction on this website that need attention
+## (New Version)Some content and functions interaction on this website that need attention
 
 ### 1. Responsive image
 
