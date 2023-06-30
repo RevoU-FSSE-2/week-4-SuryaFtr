@@ -1,4 +1,6 @@
-# Banana Dish Recipe Website - Banana Chef
+# Banana Dish Recipe Website - Banana Chef New Version
+
+This is the new website version that develoved from the old version of this website before.
 
 The content of this website, is to show a recipes for how to make banana dishes, which are accompanied by a video tutorial demo recipe for making banana dishes.
 
@@ -8,7 +10,7 @@ The content of this website, is to show a recipes for how to make banana dishes,
 2. CSS
 3. Javascript
 
-## The Several skills are used in making this website
+## The skills are used in making the previous version of this website
 
 1. Build webpage using a correct semantics for each elements
 2. Applying responsive design with media query
@@ -16,7 +18,16 @@ The content of this website, is to show a recipes for how to make banana dishes,
 4. Centering element using Flex
 5. Creating a Fixed or Sticky Nav Header
 
-## Some content and functions interaction on this website that need attention
+## Addtional skills are used in making the New Version of this website
+1. Applying custom font using @font-face
+2. Applying text-shadow to text
+3. Applying 1 responsive background image (using contain or cover)
+4. Applying 1 responsive image with picture + source + srcset method
+5. Creating one Asymmetrical Grid
+6. Using advanced form element (date, color, local date, range picker) and make it has correct form attributes as it desired
+7. Creating simple animation with two method, animation and transition
+
+## (Old Version)Some content and functions interaction on this website that need attention
 
 This website is a one-page website, where the menu links and some buttons on this website will not work as they should.
 
@@ -30,8 +41,26 @@ At the top right of the website there is an image of a hamburger icon, which wil
 
 In the content section for filling out a form, at the bottom of the website, there is an inquiry form providing 2 radio button form options. Which answer choice from the form radio button will affect the content of the next form filling.
 
+## (New Version 2)Some content and functions interaction on this website that need attention
+
+### 1. Responsive image
+
+In the 'most favorite banana dish' section there is a responsive image with the 'image+ source+ srcset' method.
+Which image will have a different perspective and a more focused image, at a mobile resolution of 320 pixels to 425 pixels.
+
+### 2. The animation and transition
+
+There is an animation and transition function using CSS, namely in the header title section using the 'animation' method and in the image section the types of bananas use the 'transition' method
+
+### 3. Asymmetrical Grid
+
+In the image section of the types of bananas, use 'display: grid' in the CSS style, where the grid dimensions used are 4 columns and 3 rows.
+At a mobile resolution of 375 pixels to 767 pixels, the grid dimensions will change to 2 columns and 4 rows.
+At a mobile resolution of 320 pixels, the grid dimensions will change to 1 column and 1 row.
+
+
 ## Website Layout
-Website link : https://banacef.netlify.app/
+Website link : https://banacefnewver.netlify.app/
 
 ## About Me
 

@@ -1,7 +1,17 @@
-body{
-    font-family: 'Segoe UI', sans-serif;
+@font-face {
+    font-family: WixMadeforDisplay;
+    src: url(../fonts/WixMadeforDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: WixMadeforDisplay, 'Segoe UI', sans-serif;
     background-color: #DADCE0;
     margin: 0;
+}
+
+.title-container,
+h1 {
+    font-family: 'Segoe Print';
 }
 
 section {
@@ -12,7 +22,8 @@ section.full-screen {
     margin: 0;
 }
 
-#desktop-nav{
+#desktop-nav {
+    z-index: 5;
     position: fixed;
     background-color: #FFE733;
     width: 100%;
@@ -34,37 +45,37 @@ section.full-screen {
     margin-right: 10px;
 }
 
-.banana-icon img{
+.banana-icon img {
     height: 25px;
     width: 25px;
 }
 
-.banana-sidebar{
+.banana-sidebar {
     margin-left: 32px;
 }
 
-#desktop-nav > span > img {
+#desktop-nav>span>img {
     height: 32px;
     width: auto;
     padding: 8px;
 }
 
-#desktop-nav > span {
+#desktop-nav>span {
     display: flex;
     align-items: center;
 }
 
-#desktop-nav > ul {
+#desktop-nav>ul {
     margin-left: auto;
     margin-right: 10px;
 }
 
-#desktop-nav > ul > li {
+#desktop-nav>ul>li {
     margin: 0;
     display: inline-block;
 }
 
-#desktop-nav > ul > li > a{
+#desktop-nav>ul>li>a {
     background-color: #222222;
     color: #FFE733;
     text-align: center;
@@ -74,24 +85,28 @@ section.full-screen {
     transition: .5s ease;
 }
 
-.active{
+.active {
     background-color: #11b611 !important;
     color: #222222 !important;
     border-radius: 10%;
 }
 
-#desktop-nav  ul  li  a:hover{
+#desktop-nav ul li a:hover {
     background-color: #11b611;
     color: #222222;
     border-radius: 10%;
 }
 
 header {
+    background-image: url(https://i.ibb.co/X2XrqvS/banana-banner3.webp);
+    background-position: top center;
+    background-size: cover;
+    text-shadow: 2px 2px 8px #000;
     text-align: center;
-    color: #FFE733;
-    background-color: #222222;
-    border-bottom:2px solid #11b611;
-    height: 320px;
+    font-weight: bold;
+    color: #FFF;
+    border-bottom: 2px solid #11b611;
+    height: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -99,19 +114,31 @@ header {
     padding-top: 48px;
 }
 
+@keyframes slidedown {
+    from {
+        margin-bottom: 40%;
+    }
+
+    to {
+        margin-bottom: 0;
+    }
+}
+
 header h1 {
     margin: 16px;
+    animation-duration: 2s;
+    animation-name: slidedown;
 }
 
 header p {
     margin: 0;
 }
 
-img{
+img {
     width: 100%;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -121,11 +148,22 @@ h2{
     object-fit: cover;
 }
 
-.flex-container{
+#banana-types .grid-container img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#banana-types .grid-container div:hover img {
+    background-color: #000;
+    opacity: .6;
+}
+
+.flex-container {
     background-color: #FFE733;
-    border:1px solid #11b611;
+    border: 1px solid #11b611;
     border-radius: 10%;
-    gap: 40px !important;
+    gap: 40px;
 }
 
 #banana-dish .flex-container ul {
@@ -135,7 +173,8 @@ h2{
 #banana-dish .flex-container figure {
     text-align: center;
 }
-#banana-dish .flex-container figure figcaption{
+
+#banana-dish .flex-container figure figcaption {
     font-size: 1.1em;
 }
 
@@ -143,7 +182,7 @@ h2{
     height: 240px;
 }
 
-#video-more{
+#video-more {
     margin-top: 16px;
 }
 
@@ -154,17 +193,17 @@ h2{
     padding: 20px 0;
 }
 
-.more-detail a{
+.more-detail a {
     background-color: #222222;
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
-    color: #FFE733;    
+    color: #FFE733;
     font-size: 1.2em;
     transition: .5s ease;
 }
 
-.more-detail a:hover{
+.more-detail a:hover {
     background-color: #DADCE0;
     color: #000;
 }
@@ -175,12 +214,13 @@ fieldset {
     border-color: #FFE733;
 }
 
-legend{
+legend {
     color: #FFE733;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="date"],
 textarea,
 select {
     width: 97%;
@@ -194,7 +234,7 @@ select {
 #form-survey {
     color: #DADCE0;
     background-color: #222222;
-    border-top:2px solid #11b611;
+    border-top: 2px solid #11b611;
     padding: 8px;
     margin-top: 16px;
     margin-right: 0;
@@ -207,8 +247,7 @@ select {
     margin-right: auto;
 }
 
-button[type="submit"],
-button[type="reset"] {
+button {
     border: 1px solid #FFE733;
     border-radius: 4px;
     width: 100%;
@@ -220,7 +259,7 @@ button[type="reset"] {
     transition: .5s ease;
 }
 
-button:hover{
+button:hover {
     color: #DADCE0;
     background-color: #222222;
 }
@@ -229,7 +268,7 @@ footer {
     text-align: center;
     color: #222222;
     background-color: #FFE733;
-    border-top:2px solid #11b611;
+    border-top: 2px solid #11b611;
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -247,6 +286,7 @@ footer {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    transition: width 1s;
 }
 
 .sidenav a {
@@ -271,15 +311,20 @@ footer {
     font-size: 36px;
     margin-left: 180px;
 }
+
 .sidenav .closebtn:hover {
     background-color: transparent;
     color: #11b611;
 }
 
-#survey-yes{
+#personal-data {
     display: none;
 }
 
-#survey-no{
+#survey-yes {
+    display: none;
+}
+
+#survey-no {
     display: none;
 }

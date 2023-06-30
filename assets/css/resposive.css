@@ -6,6 +6,29 @@
     display: block;
 }
 
+@media only screen and (min-width: 1024px) {
+    #banana-types .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 15px;
+    }
+
+    #types-1 {
+        grid-column: 1 / 2 span;
+        grid-row: 1 / 2 span;
+    }
+
+    #types-6 {
+        grid-column: 3 / 2 span;
+        grid-row: 2 / 2 span;
+    }
+
+    #video-more .flex-container {
+        flex-direction: row !important;
+        gap: 20px;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
     .mobile-mode {
         display: block !important;
@@ -18,67 +41,141 @@
 }
 
 /* Screen for Tablet and Desktop */
-@media only screen and (min-width: 320px) {
-    header{
-        width: 100%;
-    }
-    main{
-        width: 100%;
-    }
-    #video-more .flex-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    iframe {
-        max-width: 300px;
-    }
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-@media only screen and (min-width: 425px) {
-    iframe {
-        max-width: 360px;
-    }
-}
-
 @media only screen and (min-width: 768px) {
-    #banana-types .grid-container{
+    #banana-types .grid-container {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 15px;
     }
 
-    #banana-dish > .flex-container {
+    #types-1 {
+        grid-column: 1 / 2 span;
+        grid-row: 1 / 2 span;
+    }
+
+    #types-6 {
+        grid-column: 3 / 2 span;
+        grid-row: 2 / 2 span;
+    }
+
+    #banana-types .grid-container img {
+        object-fit: fill;
+    }
+
+    #banana-dish>.flex-container {
         display: flex;
         align-items: start;
         justify-content: center;
         gap: 0;
     }
-    
-    #banana-dish > .flex-container figure img {
+
+    #banana-dish>.flex-container figure img {
         height: 300px;
     }
-    
-    #banana-dish > .flex-container figcaption {
+
+    #banana-dish>.flex-container figcaption {
         text-align: center;
         margin-top: 16px;
     }
-    
-    #banana-dish > .flex-container.row-reverse {
+
+    #banana-dish>.flex-container.row-reverse {
         flex-direction: row-reverse;
     }
-    
-    #banana-dish > .flex-container.row-reverse figure {
+
+    #banana-dish>.flex-container.row-reverse figure {
         margin-left: 40px;
         min-width: 320px;
     }
 
-    #banana-dish > .flex-container.row-reverse ul {
+    #banana-dish>.flex-container.row-reverse ul {
         margin-left: 32px;
     }
-    
+
+    #video-more .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    #banana-types .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    #types-1 {
+        grid-column: 1 / 2 span;
+    }
+
+    #types-6 {
+        grid-column: 1 / 2 span;
+    }
+
     iframe {
-        max-width: 480px;
+        max-width: 340px;
+    }
+
+    #video-more .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+    #banana-types .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    #types-1 {
+        grid-column: 1 / 2 span;
+    }
+
+    #types-6 {
+        grid-column: 1 / 2 span;
+    }
+
+    iframe {
+        max-width: 300px;
+    }
+
+    #video-more .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    #banana-types .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #video-more .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    iframe {
+        max-width: 250px;
+    }
+
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
     }
 }

@@ -7,21 +7,28 @@ function closeNav() {
 }
 
 document.querySelector("#next-button").addEventListener("click", switchMode);
-function switchMode(){
-    if(document.querySelector('#yes').checked == true){
+function switchMode() {
+    if (document.querySelector('#yes').checked == true) {
         showSurveyYes();
     }
-    else if(document.querySelector('#no').checked == true){
+    else if (document.querySelector('#no').checked == true) {
         showSurveyNo();
+    }
+    else {
+        alert('Please choose before proceed next form filling !');
     }
 }
 
-function showSurveyYes(){
+function showSurveyYes() {
+    document.querySelector("#personal-data").style.display = "block";
+    document.querySelector("#fullname").focus();
     document.querySelector("#survey-yes").style.display = "block";
     document.querySelector("#survey-no").style.display = "none";
 }
 
-function showSurveyNo(){
+function showSurveyNo() {
+    document.querySelector("#personal-data").style.display = "block";
+    document.querySelector("#fullname").focus();
     document.querySelector("#survey-no").style.display = "block";
     document.querySelector("#survey-yes").style.display = "none";
 }
