@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Banana Dish Recipe Website - Banana Chef New Version
 
 This is the new website version that develoved from the old version of this website before.
@@ -84,6 +83,3 @@ LinkedIn : https://www.linkedin.com/in/surya-faturohman/
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/6H2sAzcR)
-=======
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/isPhTOcA)
->>>>>>> 793578bf8c0f463780dc2f7642800a5de46f3de2
