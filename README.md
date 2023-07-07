@@ -12,34 +12,54 @@ Furthermore, there is an explanation section about this website and the develope
 * Niagahoster
 * Cloudflare
 * Custom Domain on Netlify with Niagahoster and Cloudflare
+* Auto Deployment on Github and Netlify
 * About Website
 * About Me
 
 # Git and Github
 
-Before going further into this documentation, there are a few things to do first on Git and Github.
+Before going further into this documentation, there are a few things to do first on Git and Github
 
-1. Take the files in the previous project, on the old github repository using git clone and move them to the new local repository.
+1. Take the files in the previous project, on the old github repository using git clone and move them to the new local repository
 
 ![git-clone](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/422f90c8-259c-4b31-bf8b-63094f76b0f2)
 
-2. Resetting the old remote repository in the new local repository with the new remote repository, with git remote set-url origin "yourcloneurl".
+2. Resetting the old remote repository in the new local repository with the new remote repository, with git remote set-url origin "yourcloneurl"
 
 ![git-set-new-repo](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/ac897cfe-23b4-4304-9455-64fabcedbdd9)
 
-3. Create a new branch on the new local and remote repository.
+3. Create a new branch on the new local and remote repository
 
 ![git-new-branch](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/012f5a3d-c69e-498e-9aa3-aa26ce8cfe8a)
 
-4. Switch to the newly created branch from the main branch, with git checkout "branchname".
+4. Switch to the newly created branch from the main branch, with git checkout "branchname"
 
 ![git-new-branch-local](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/6b3b5fef-d72b-42fd-a264-f92db384e074)
 
-5. Push all the files in the local repository to the remote repository using git push origin "branchname".
+5. Push all the files in the local repository to the remote repository using git push origin "branchname"
 
 ![git-push-suryftr](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/1dc053f7-3029-496f-9e9b-fda3de7b2b39)
 
-6. After that you can make a pull request to main branch and merge it.
+6. After that you can create a pull request to main branch
+
+![git-pull-request](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/4e1f7d8c-b9d7-4d08-bf89-801ef5405c4c)
+
+7. Pull request review and preview
+
+Pull request success
+![git-pull-request-success](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/b95297d6-8b20-4a3a-838a-3165de24485b)
+
+Pull request preview on Netlify 
+![git-pull-request-preview-netlify1](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/842be779-c17b-4f2e-9704-d943e2be8d4b)
+![git-pull-request-preview-netlify2](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/189907b9-35b2-4bb1-9ffc-633214934d26)
+
+8. Merge pull request 
+
+![git-merge-pull-request](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/c8d984b4-d4d1-4792-ba71-86750e280676)
+![git-merge-pull-request-confirm](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/cf75b767-c2f1-4941-b4c6-2ca3de341f64)
+
+Merge success
+![git-merge-pull-request-success](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/98c2ce4d-8d63-437a-9f3a-150f8d70cf57)
 
 # Netlify 
 
@@ -54,6 +74,7 @@ Before going further into this documentation, there are a few things to do first
 ![netlify-sign-up-wt-mail](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/348273c0-e983-4d0f-93b8-20f4f0c16c05)
 
 3. Now you have registered to Netlify
+
 ![netlify-user-dashboard](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/579636c4-fceb-464e-871e-7c159467ef2b)
 
 ## Add new site to your netlify account
@@ -182,6 +203,20 @@ Canonical Name, otherwise known as CNAME is a type of DNS record that is used to
 5. Preview (Opening your website using link custom namesite and domain on Netlify with connect Niagahoster and Cloudflare)
 
 ![netlify-cutom-domain-preview](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/64dbd4ea-ecb7-47a6-af83-b2cf20cba179)
+
+# Auto Deployment on Github and Netlify
+
+This section is to find out how the auto deployment system on Netlify works.
+
+So, try to make a change files content in deployed project github on Netlify and see how it comes.
+
+The Netlify will save your change on the github and show the change on your deployed website display, without having to re-deploy your website.
+
+## Before deployment change in h1 element on index.html
+![auto-deploy-before-change](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/4f1c07f5-f0ed-4dc4-9fea-a4e7f3b7bfce)
+
+## After deployment change in h1 element on index.html
+![auto-deploy-after-change](https://github.com/RevoU-FSSE-2/week-4-SuryaFtr/assets/127850712/aa77ccc5-511c-47aa-9509-a6ad6e1b747d)
 
 # About Website
 
